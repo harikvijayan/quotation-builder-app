@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Suspense } from 'react'
 import LoadingSpinner from "./components/shared/LoadingSpinner"
 import LoginPage from "./la-fortuna/pages/LoginPage"
+import ItineraryPlanPage from "./la-fortuna/pages/ItineraryPlanPage"
 
 function App() {
   const PageLoader = () => (
@@ -17,6 +18,7 @@ function App() {
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<LoginPage />} />
+              <Route path="/itinerary-plan" element={<ItineraryPlanPage />} />
               {/* <Route path="/about-us" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/collections" element={<CollectionsPage />} />
