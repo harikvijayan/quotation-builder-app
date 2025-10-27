@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/pentalogo.png';
 
 export default function LoginPage() {
   const [packageId, setPackageId] = useState('');
@@ -40,7 +40,8 @@ export default function LoginPage() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="mx-auto w-20 h-20 bg-linear-to-br from-green-800 to-green-950 rounded-2xl flex items-center justify-center shadow-lg"
+              className=".
+              3"
             >
               <img src={logo} alt="logo" />
             </motion.div>

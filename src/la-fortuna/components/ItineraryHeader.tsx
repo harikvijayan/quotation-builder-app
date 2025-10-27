@@ -17,7 +17,7 @@ export default function ItineraryHeader({ packageData }: ItineraryHeaderProps) {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-[20px] mb-5 shadow-xl text-white relative overflow-hidden"
+      className="bg-black rounded-[20px] mb-5 shadow-xl text-white relative overflow-hidden"
     >
       {/* Decorative Background Circle */}
       <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-gradient-radial from-yellow-600/10 to-transparent rounded-full translate-x-12 -translate-y-12" />
@@ -28,9 +28,9 @@ export default function ItineraryHeader({ packageData }: ItineraryHeaderProps) {
           <div className="flex items-center gap-10">
             {/* Logo */}
             <img
-              src="/src/assets/logo.png"
+              src="/src/assets/pentalogo.png"
               alt="La Fortuna Logo"
-              className="max-h-20 w-auto bg-gradient-to-br from-green-800 to-green-950 rounded-2xl block"
+              className="max-h-20 bg-white w-auto rounded-2xl block"
             />
 
             {/* Title */}
