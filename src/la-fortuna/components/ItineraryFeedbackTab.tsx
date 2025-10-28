@@ -84,7 +84,7 @@ export default function ItineraryFeedbackTab({
             <Button
               type="submit"
               disabled={isSubmitting || isSubmitted}
-              className="w-full bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-base font-semibold py-6 disabled:opacity-60 disabled:cursor-not-allowed"
+              className="w-full bg-linear-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-base font-semibold py-6 disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {isSubmitting && (
                 <span className="inline-block w-5 h-5 border-2 border-gray-900 border-t-transparent rounded-full animate-spin mr-2" />

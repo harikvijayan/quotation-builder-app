@@ -35,7 +35,7 @@ export default function ItineraryHeader({ packageData }: ItineraryHeaderProps) {
 
             {/* Title */}
             <div>
-              <h1 className="text-[32px] font-bold mb-1.5 bg-gradient-to-r from-yellow-600 to-yellow-300 bg-clip-text text-transparent">
+              <h1 className="text-[32px] font-bold mb-1.5 bg-linear-to-r from-yellow-600 to-yellow-300 bg-clip-text text-transparent">
                 {packageData.title}
               </h1>
               <p className="text-gray-300 text-base">
@@ -57,12 +57,12 @@ export default function ItineraryHeader({ packageData }: ItineraryHeaderProps) {
         </div>
 
         {/* Traveler Info Section */}
-        <div className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 rounded-xl p-5 backdrop-blur-sm mb-5">
+        <div className="bg-linear-to-r from-gray-900/50 to-gray-800/50 rounded-xl p-5 backdrop-blur-sm mb-5">
           <div className="flex justify-between items-center mb-4">
             <div className="text-base font-semibold text-yellow-400">
               Traveler Details
             </div>
-            <div className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-1.5 rounded-full text-sm font-semibold">
+            <div className="bg-linear-to-r from-purple-600 to-purple-700 text-white px-4 py-1.5 rounded-full text-sm font-semibold">
               {totalTravelers} Travelers
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function ItineraryHeader({ packageData }: ItineraryHeaderProps) {
           <div className="flex gap-6 flex-wrap">
             {/* Adults */}
             <div className="flex items-center gap-3 px-4 py-3 bg-white rounded-xl border border-gray-200 min-w-[140px]">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-green-600 to-green-700 text-white flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-linear-to-br from-green-600 to-green-700 text-white flex items-center justify-center">
                 <Users className="w-4 h-4" />
               </div>
               <div>
@@ -83,7 +83,7 @@ export default function ItineraryHeader({ packageData }: ItineraryHeaderProps) {
 
             {/* Children */}
             <div className="flex items-center gap-3 px-4 py-3 bg-white rounded-xl border border-gray-200 min-w-[140px]">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-linear-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center">
                 <User className="w-4 h-4" />
               </div>
               <div>
@@ -96,7 +96,7 @@ export default function ItineraryHeader({ packageData }: ItineraryHeaderProps) {
 
             {/* Infants */}
             <div className="flex items-center gap-3 px-4 py-3 bg-white rounded-xl border border-gray-200 min-w-[140px]">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-500 to-pink-600 text-white flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-linear-to-br from-pink-500 to-pink-600 text-white flex items-center justify-center">
                 <Baby className="w-4 h-4" />
               </div>
               <div>

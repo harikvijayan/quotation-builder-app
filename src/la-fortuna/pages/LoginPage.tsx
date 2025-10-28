@@ -47,7 +47,7 @@ export default function LoginPage() {
             </motion.div>
             
             <div>
-              <CardTitle className="text-3xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">
+              <CardTitle className="text-3xl font-bold bg-linear-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">
                 Travel Package Dashboard
               </CardTitle>
               <CardDescription className="text-base mt-2 text-gray-600">
@@ -106,7 +106,7 @@ export default function LoginPage() {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full h-12 text-base font-semibold bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-gray-900 shadow-lg hover:shadow-xl transition-all"
+                  className="w-full h-12 text-base font-semibold bg-linear-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-gray-900 shadow-lg hover:shadow-xl transition-all"
                 >
                   {isLoading ? (
                     <>

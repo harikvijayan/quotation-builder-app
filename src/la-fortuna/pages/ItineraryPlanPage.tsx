@@ -8,6 +8,12 @@ import ItineraryFeedbackTab from '../components/ItineraryFeedbackTab';
 import ItineraryIssuesTab from '../components/ItineraryIssuesTab';
 import type { ItineraryPackage } from '../types/itinerary';
 import { cn } from '@/lib/utils';
+import img1 from '@/assets/img1.png';
+import img2 from '@/assets/img2.jpeg';
+import img3 from '@/assets/img3.jpeg';
+import img4 from '@/assets/img4.jpeg';
+import img5 from '@/assets/img5.jpeg';
+import img6 from '@/assets/img6.jpeg';
 
 // Mock data - Replace with actual API call
 const mockPackageData: ItineraryPackage = {
@@ -112,7 +118,8 @@ const mockPackageData: ItineraryPackage = {
             { icon: '📸', text: 'Photography Allowed' },
             { icon: '📸', text: 'Scenic Photography' },
           ],
-          photos: 12,
+          photos: 6,
+          photoUrls: [img1, img2, img3, img4, img5, img6],
           averageRating: 4.6,
           totalReviews: 24,
           reviews: [
@@ -261,7 +268,7 @@ export default function ItineraryPlanPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100">
       <div className="max-w-[1400px] mx-auto p-5">
         {/* Header */}
         <ItineraryHeader packageData={packageData} />

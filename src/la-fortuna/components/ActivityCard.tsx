@@ -214,14 +214,29 @@ export default function ActivityCard({ activity, index }: ActivityCardProps) {
                 </button>
               </div>
               <div className="p-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                {Array.from({ length: activity.photos || 0 }).map((_, idx) => (
-                  <div
-                    key={idx}
-                    className="aspect-[4/3] bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 text-sm"
-                  >
-                    Photo {idx + 1}
-                  </div>
-                ))}
+                {activity.photoUrls && activity.photoUrls.length > 0 ? (
+                  activity.photoUrls.map((photoUrl, idx) => (
+                    <div
+                      key={idx}
+                      className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden"
+                    >
+                      <img
+                        src={photoUrl}
+                        alt={`${activity.title} - Photo ${idx + 1}`}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  ))
+                ) : (
+                  Array.from({ length: activity.photos || 0 }).map((_, idx) => (
+                    <div
+                      key={idx}
+                      className="aspect-[4/3] bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 text-sm"
+                    >
+                      Photo {idx + 1}
+                    </div>
+                  ))
+                )}
               </div>
             </motion.div>
           )}

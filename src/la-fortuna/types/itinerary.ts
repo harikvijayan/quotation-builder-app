@@ -54,6 +54,7 @@ export interface Activity {
   meta: ActivityMeta[];
   guidelines?: string[];
   photos?: number;
+  photoUrls?: string[];
   pickupDetails?: PickupDetails;
   nearbyBreakfastSpots?: Array<{
     name: string;
