@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Loader2, Plane } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
+import logo from '../../assets/pentalogo.png';
 
 export default function LoginPage() {
   const [packageId, setPackageId] = useState('');
@@ -21,7 +22,7 @@ export default function LoginPage() {
     setTimeout(() => {
       // Store user data in localStorage
       localStorage.setItem('userData', JSON.stringify({ packageId, name }));
-      navigate('/dashboard');
+      navigate('/itinerary-plan');
     }, 1500);
   };
 
@@ -39,13 +40,14 @@ export default function LoginPage() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="mx-auto w-20 h-20 bg-gradient-to-br from-green-800 to-green-950 rounded-2xl flex items-center justify-center shadow-lg"
+              className=".
+              3"
             >
-              <Plane className="w-10 h-10 text-white" />
+              <img src={logo} alt="logo" />
             </motion.div>
             
             <div>
-              <CardTitle className="text-3xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">
+              <CardTitle className="text-3xl font-bold bg-linear-to-r from-yellow-600 to-yellow-400 bg-clip-text text-transparent">
                 Travel Package Dashboard
               </CardTitle>
               <CardDescription className="text-base mt-2 text-gray-600">
@@ -104,7 +106,7 @@ export default function LoginPage() {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full h-12 text-base font-semibold bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-gray-900 shadow-lg hover:shadow-xl transition-all"
+                  className="w-full h-12 text-base font-semibold bg-linear-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-gray-900 shadow-lg hover:shadow-xl transition-all"
                 >
                   {isLoading ? (
                     <>
